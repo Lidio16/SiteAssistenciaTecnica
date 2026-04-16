@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 10;
+    
+
+}
+.barra {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 4em;
+    padding: 0 100px;
+    background-color: rgba(0, 0, 0, 0.473);
+    backdrop-filter: blur(25px);
+    border-bottom: 2px solid white;
+    z-index: 10;
+}
+ .logo{
+    display: flex;
+    height: 5em;
+
+ }
+.imagem-logo{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70%;
+    margin: 0.7em;
+}
+.logo h1{
+    width: 100%;
+    margin: auto;
+}
+.menu {
+    display:flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    height: 8vh;
+    list-style: none;
+    z-index: 10;  
+}
+.menu li{
+    padding-top: 2.8vh;
+    background-color: transparent;
+    transition: all 300ms ease-in-out;
+    z-index: 10;
+}
+
+.menu a {
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 2px 2px 15px black;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+.opcoes::after{
+    content:"";
+    position:absolute;
+    left:-10%;
+    bottom:-5px;
+    width: 120%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.menu a:hover::after{
+    transform: scaleX(1);
+    
+}
+.menu li{
+    transition: transform 0.3s ease;
+}
+.menu li:hover{
+    transform: scale(1.05);
+}
+.secao-principal{
+    z-index: 1;
+    background-image: url("assets/tecnico.png");
+    background-position: center;
+    background-size: cover;
+    top:0;
+    width: 100%;
+    height: 55vh;
+    padding-top: 10vh;
+}
+.principal-1{
+    margin: 0 auto;
+    width: 50vw;
+    height: 15vh;
+    background-color: transparent;
+     background-color: transparent;
+    z-index: 1;
+    padding-top: 7vh;
+}
+.principal-1 h1{
+    font-size: 2vw;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30vw;
+    margin-top: 3vh;
+    margin: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 2vh;
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px black;
+}
+.principal-1 h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 2vh;
+}
+.carrossel{
+    background-color: transparent;
+    width: 38vw;
+    height: 30vh;
+    margin: auto;
+    margin-top: 2vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 5vw;
+    margin-top: 10vh;
+    animation: scroll 18s  linear infinite;
+    will-change: transform;
+}
+.slides img{
+    margin-right:4vw;
+    max-width: 18vw;
+    min-height: 10vh;
+    max-height: 15vh;
+    margin-inline-start: 20px;
+}
+.motorola {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-4000%);
+  }
+}
+.secao-principal-2{
+    z-index: 1;
+    display: flex;
+    background-image: url("assets/fundo3.webp");
+    background-position: center;
+    background-size: cover;
+    top:0;
+    width: 100%;
+    height: 100vh;
+}
+
+.principal-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal-3 {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-principal-2 {
+    margin-top: -15vh;
+    width: 40vw;
+    height: 55vh;
+}
+.sub-principal-2 h1{
+    font-family: sans-serif;
+    color: blue;
+    text-align: center;
+    font-size: 5vh;
+    text-transform: uppercase;
+}
+.sub-principal-2 h2{
+    font-family: sans-serif;
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 4vh;
+}
+.secao-principal-2 ul{
+    font-family: sans-serif;
+    width: 40vw;
+    min-width: 30vw;
+    max-width: 50vw;
+    margin-left: 1em;
+    font-size: 3.4vh;
+    padding-top: 4vh;
+    line-height: 5vh;
+    list-style: inside;
+}
+.sub-principal-2 p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 5vh;
+    padding-top: 5vh;
+}
+.sub-principal-3{
+  position: relative;
+  display: inline-block;
+}
+
+.sub-principal-3 img {
+  display: block;
+  width: 37vw;
+  height: 80vh;
+  position: relative;
+  z-index: 2;
+  border-radius: 150px 0 150px 0; /* arredondado só em 2 cantos */
+}
+.sub-principal-3::before {
+  content: "";
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+  width: 96%;
+  height: 100%;
+  border: 0.5vw solid rgb(6, 2, 255);
+  border-radius: 150px 0 150px 0;
+  z-index: 1;
+}
+
+/* .sub-principal-3 {
+
+    width: 50%;
+    height: 50%;
+    width: 40vw;
+    height: 65vh;
+    position: relative;
+    display: inline-block;
+    background-image: url("assets/celular.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom: 5px solid blue;
+    border-right: 5px solid blue;
+    border-spacing: 5px 5px;
+} */
