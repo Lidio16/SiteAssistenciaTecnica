@@ -547,12 +547,12 @@
     background-size: cover;
     top:0;
     width: 100%;
-    height: 1500px;
+    height: 120rem;
 }
 
 .principal-2 {
     width: 100%;
-    height: 1000px;
+    max-height: 80rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -560,7 +560,7 @@
 .principal-3 {
     margin-top: 50px;
     width: 100%;
-    height: 600px;
+    height: 25em;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -706,9 +706,9 @@
 }
 .nota1 {
     box-sizing: border-box;
-    width: 70%;
-    height: 250px;
-    margin-left:15%;
+    width: 92%;
+    height: 15em;
+    margin-left:1em;
 }
 .nota-div1{
     background-color: rgb(32, 32, 32);
@@ -739,9 +739,9 @@
 }
 .nota2 {
     box-sizing: border-box;
-    width: 70%;
-    height: 250px;
-    margin-left:15%;
+    width: 92%;
+    height: 15em;
+    margin-left:1em;
 }
 
 .nota2-div1{
